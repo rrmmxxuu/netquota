@@ -1,0 +1,10 @@
+[Unit]
+Description=Run netquota sampler every 10 minutes on wall clock boundaries
+
+[Timer]
+OnCalendar=*:0/10
+Persistent=true
+Unit=netquota.service
+
+[Install]
+WantedBy=timers.target

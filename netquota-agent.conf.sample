@@ -1,0 +1,37 @@
+# Worker endpoint, no trailing slash needed.
+WORKER_URL=
+
+# Shared secret used as Bearer token when POST /report.
+AUTH_TOKEN=
+
+# Optional logical node name. Defaults to hostname.
+NODE_ID=
+
+# Comma-separated interfaces, or auto.
+INTERFACES=auto
+
+# Monthly reset schedule in UTC.
+RESET_DAY=1
+RESET_HOUR_UTC=0
+
+# Fixed service/package expiration time.
+# This is NOT the monthly traffic reset day.
+# Accepted formats:
+#   EXPIRE_AT=2026-02-23
+#   EXPIRE_AT=2026-02-23T23:59:59Z
+#   EXPIRE_AT=1771891199
+EXPIRE_AT=0
+
+# Total quota in bytes. Set 0 if you only care about current usage.
+# Example: 8 TiB = 8796093022208
+TOTAL_BYTES=0
+
+# Billing mode:
+# both     = upload + download both count
+# upload   = outbound/upload only; download is reported as 0
+# download = inbound/download only; upload is reported as 0
+BILLING_MODE=both
+
+STATE_FILE=/var/lib/netquota-agent/state.json
+REQUEST_TIMEOUT=10
+INCLUDE_HOSTNAME=true

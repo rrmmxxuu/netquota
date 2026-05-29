@@ -1,0 +1,10 @@
+[Unit]
+Description=Sample NIC counters and upload net quota usage
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/netquota-agent.py sample
+User=root
+Group=root

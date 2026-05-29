@@ -1,0 +1,15 @@
+name = "netquota"
+main = "src/worker.js"
+compatibility_date = "2026-05-29"
+workers_dev = true
+
+# Create this namespace with:
+#   npx wrangler kv namespace create BAND_USAGE_KV
+# Then replace the placeholder id below with the returned id.
+[[kv_namespaces]]
+binding = "BAND_USAGE_KV"
+id = "replace-with-your-kv-namespace-id"
+
+# AUTH_TOKEN is intentionally not stored here.
+# Set it as a Worker secret:
+#   npx wrangler secret put AUTH_TOKEN

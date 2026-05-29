@@ -1,0 +1,26 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node/Wrangler local state
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+
+# Local secrets and runtime state
+.env
+.env.*
+netquota-agent.conf
+state.json
+*.log
+
