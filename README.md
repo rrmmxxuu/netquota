@@ -124,7 +124,7 @@ https://netquota.your-account.workers.dev
 在 VPS 上克隆项目，并进入项目目录：
 
 ```bash
-git clone https://github.com/your-name/netquota.git
+git clone https://github.com/rrmmxxuu/netquota.git
 cd netquota
 ```
 
